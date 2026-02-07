@@ -1,8 +1,8 @@
-# nuclear-energy-brief
+# nuclear-energy-movement
 
 ## Local Preview
 ```bash
-cd /home/clawdbot267/.openclaw/workspace/sites/nuclear-energy-brief
+cd /home/clawdbot267/.openclaw/workspace/sites/nuclear-energy-movement
 python3 -m http.server 8080
 # Open http://localhost:8080
 ```
@@ -14,7 +14,7 @@ python3 -m http.server 8080
 2. Run: `vercel --prod`
 
 ### Netlify
-1. Drag `sites/nuclear-energy-brief/` folder to https://app.netlify.com/drop
+1. Drag `sites/nuclear-energy-movement/` folder to https://app.netlify.com/drop
 
 ### Cloudflare Pages
 1. Connect Git repo or upload via CLI
