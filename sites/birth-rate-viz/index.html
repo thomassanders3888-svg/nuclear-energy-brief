@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Birth Rate Tracker - The Demographic Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">Birth Rate Viz</div>
+        <div class="nav-links">
+            <a href="#data">Data</a>
+            <a href="#implications">Implications</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>The Silent Crisis: Global Birth Rates</h1>
+            <p class="hero-description">Most developed nations are below replacement rate (2.1). This has profound implications for economies, innovation, and human civilization.</p>
+            <div class="key-stat">
+                <span class="stat-number">1.6</span>
+                <span class="stat-label">Average births per woman (developed nations)</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="data" class="charts">
+        <h2>Global Fertility Rates</h2>
+        
+        <div class="chart-container">
+            <h3>Fertility Rate by Country (2023)</h3>
+            <canvas id="countryChart"></canvas>
+            <p class="chart-note">Red line indicates replacement level (2.1). Below this line, populations shrink without immigration.</p>
+        </div>
+
+        <div class="chart-row">
+            <div class="chart-container half">
+                <h3>Historical Trend - USA</h3>
+                <canvas id="usaTrendChart"></canvas>
+            </div>
+            <div class="chart-container half">
+                <h3>Historical Trend - Selected Nations</h3>
+                <canvas id="globalTrendChart"></canvas>
+            </div>
+        </div>
+
+        <div class="data-grid">
+            <div class="data-card critical">
+                <h4>Critical (&lt;1.5)</h4>
+                <ul>
+                    <li>South Korea: 0.72</li>
+                    <li>Hong Kong: 0.99</li>
+                    <li>Singapore: 1.04</li>
+                    <li>Italy: 1.24</li>
+                    <li>Spain: 1.19</li>
+                    <li>Japan: 1.20</li>
+                </ul>
+                <p class="data-note">Population halves every ~50 years</p>
+            </div>
+            <div class="data-card warning">
+                <h4>Below Replacement (1.5-2.0)</h4>
+                <ul>
+                    <li>USA: 1.67</li>
+                    <li>China: 1.71</li>
+                    <li>Germany: 1.46</li>
+                    <li>UK: 1.56</li>
+                    <li>France: 1.83</li>
+                    <li>Canada: 1.47</li>
+                </ul>
+                <p class="data-note">Decline slowed by immigration</p>
+            </div>
+            <div class="data-card stable">
+                <h4>Above Replacement (&gt;2.1)</h4>
+                <ul>
+                    <li>Nigeria: 5.18</li>
+                    <li>India: 2.18</li>
+                    <li>Indonesia: 2.18</li>
+                    <li>Brazil: 1.82 (declining)</li>
+                    <li>Mexico: 2.14</li>
+                    <li>Philippines: 2.64</li>
+                </ul>
+                <p class="data-note">Most are also declining</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="implications" class="implications">
+        <h2>Why This Matters</h2>
+        <div class="implication-grid">
+            <div class="implication-card">
+                <div class="implication-icon">👴</div>
+                <h3>Population Pyramid Inversion</h3>
+                <p>Fewer young workers supporting more elderly. Pension and healthcare systems face collapse without structural reform.</p>
+            </div>
+            <div class="implication-card">
+                <div class="implication-icon">💼</div>
+                <h3>Shrinking Workforce</h3>
+                <p>GDP growth depends on productivity gains since labor force shrinks. Immigration becomes existential economic necessity.</p>
+            </div>
+            <div class="implication-card">
+                <div class="implication-icon">🏠</div>
+                <h3>Housing Market Collapse</h3>
+                <p>Fewer buyers relative to sellers. Japan's "ghost towns" and ¥1 houses preview what's coming elsewhere.</p>
+            </div>
+            <div class="implication-card">
+                <div class="implication-icon">🔬</div>
+                <h3>Innovation Slowdown</h3>
+                <p>Younger populations drive innovation. Fewer young people = fewer breakthroughs, slower scientific progress, reduced risk-taking.</p>
+            </div>
+            <div class="implication-card">
+                <div class="implication-icon">🌏</div>
+                <h3>Geopolitical Shifts</h3>
+                <p>Power shifts to younger-populated regions. Cultural influence follows demographics.</p>
+            </div>
+            <div class="implication-card">
+                <div class="implication-icon">💡</div>
+                <h3>Possible Solutions</h3>
+                <p>Family-friendly policy, immigration reform, automation, space colonization. None fully solve; all help.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About This Data</h2>
+        <p>Data sourced from World Bank, UN Population Division, and national statistics agencies. "Replacement rate" of 2.1 accounts for child mortality, gender imbalance, and infant deaths before reproductive age.</p>
+        <p>This is not about policy prescription—it's about understanding the trends that will shape our world. The future belongs to those who show up.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Birth Rate Visualizer. Data-driven civic awareness.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
